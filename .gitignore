@@ -60,6 +60,7 @@ target/
 .env
 .venv/
 data/
+datasource/
 
 # Database
 *.db

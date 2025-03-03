@@ -1,10 +1,46 @@
-# local package
--e .
+pandas
+numpy
+dvc
+keras
+scikit-learn
+matplotlib
+seaborn
+tensorflow
+joblib
+PyYaml
+streamlit
+h5py
+keras_preprocessing
+mlflow
+opencv-python
 
-# external requirements
-click
-Sphinx
-coverage
-awscli
-flake8
-python-dotenv>=0.5.1
+
+# Data Handling & Processing:
+
+# Pandas – Used for data manipulation and analysis, especially working with tabular data (CSV, Excel, SQL, etc.).
+# NumPy – Provides support for large, multi-dimensional arrays and matrices, along with mathematical functions.
+# PyYAML – Used for reading and writing YAML files, often for configuration management.
+
+# Machine Learning & Deep Learning:
+
+# Scikit-learn – A library for traditional ML algorithms (classification, regression, clustering, etc.), along with tools for preprocessing and model evaluation.
+# Keras – A high-level deep learning API that runs on top of TensorFlow, simplifying model creation.
+# TensorFlow – An end-to-end deep learning framework for training and deploying models.
+# Keras Preprocessing – A package for preprocessing image, text, and sequence data for deep learning models.
+
+# Model Management & Tracking:
+
+# Joblib – Used for saving and loading large NumPy arrays and machine learning models efficiently.
+# h5py – A library for handling HDF5 files, often used to save Keras models.
+# MLflow – A platform for tracking, packaging, and deploying ML models.
+# DVC (Data Version Control) – A version control system for ML projects, similar to Git but designed for handling large datasets and models.
+
+# Visualization:
+
+# Matplotlib – A fundamental plotting library for visualizing data through graphs and charts.
+# Seaborn – Built on top of Matplotlib, provides advanced statistical visualizations.
+
+# Computer Vision & Deployment:
+
+# OpenCV (opencv-python) – A library for image and video processing, widely used in computer vision tasks.
+# Streamlit – A Python framework for building interactive web applications, often used to deploy ML models with a user-friendly interface.

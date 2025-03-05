@@ -20,7 +20,7 @@ import tensorflow as tf
 #from urllib.parse import urlparse
 #import mlflow.keras
 from PIL import Image
-import cv2
+#import cv2
 import base64
 
 # Page Configuration 
@@ -53,13 +53,13 @@ def preprocess_image(image):
     image = np.expand_dims(image, axis=0)
     return image
 
-def generate_gradcam(image, model):
-    """ Generate Grad-CAM Visualisation """
+#def generate_gradcam(image, model):
+    
     # Dummy implementation (replace with actual Grad-CAM logic)
-    img_array = np.array(image)
-    heatmap = np.uint8(255 * np.random.rand(*img_array.shape[:2]))
-    heatmap = cv2.applyColorMap(heatmap, cv2.COLORMAP_JET)
-    return Image.fromarray(heatmap)
+    #img_array = np.array(image)
+    #heatmap = np.uint8(255 * np.random.rand(*img_array.shape[:2]))
+    #heatmap = cv2.applyColorMap(heatmap, cv2.COLORMAP_JET)
+    #return Image.fromarray(heatmap)
 
 def download_report(pred_class, confidence):
     """ Generate and return a downloadable report """
@@ -93,9 +93,9 @@ if uploaded_file:
         with col1:
             st.success(f"Prediction: {pred_class}")
             st.info(f"Confidence: {confidence:.2f}%")
-        with col2:
-            gradcam_image = generate_gradcam(image, model)
-            st.image(gradcam_image, caption="Grad-CAM Visualisation", use_column_width=True)
+        #with col2:
+            #gradcam_image = generate_gradcam(image, model)
+            #st.image(gradcam_image, caption="Grad-CAM Visualisation", use_column_width=True)
         
         # Download Report
         st.markdown(download_report(pred_class, confidence), unsafe_allow_html=True)

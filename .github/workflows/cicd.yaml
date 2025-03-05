@@ -28,8 +28,8 @@ jobs:
 
       - name: Docker Build and Push to Docker Hub
         run : |
-            docker build -t deep@learning:latest .
-            docker tag deep@learning chaita13/dl_images:latest
+            docker build -t deep--learning:latest .
+            docker tag deep--learning chaita13/dl_images:latest
             docker login -u ${{ secrets.DOCKER_USERNAME }} -p ${{ secrets.DOCKER_PASSWORD }}
             docker push chaita13/dl_images:latest
         env:
@@ -45,7 +45,7 @@ jobs:
       - name: Trivy File Scan
         run: |
             trivy fs . > trivy_scan.txt
-            trivy image tanzeemrugrel/deep-learning:latest > trivy_image_scan.txt
+            trivy image chaita13/dl_images:latest > trivy_image_scan.txt
 
     
            

@@ -16,9 +16,9 @@ from get_data import get_data, read_params
 
 from keras.applications.vgg16 import VGG16
 import tensorflow as tf
-import mlflow
-from urllib.parse import urlparse
-import mlflow.keras
+#import mlflow
+#from urllib.parse import urlparse
+#import mlflow.keras
 from PIL import Image
 import cv2
 import base64

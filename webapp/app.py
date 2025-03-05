@@ -34,7 +34,8 @@ st.markdown("""
     """, unsafe_allow_html=True)
 
 # Make sure the model path is correct relative to this file
-model = load_model("C:\\allenvs\\deeplearning\\models\\trained.h5")
+model = load_model("../models/trained.h5")
+
 
 # Class Labels
 classes = ['no_tumor', 'pituitary_tumor', 'meningioma_tumor', 'glioma_tumor']

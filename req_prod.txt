@@ -6,3 +6,4 @@ joblib
 PyYaml
 streamlit
 keras_preprocessing
+opencv-python

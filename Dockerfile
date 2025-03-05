@@ -12,6 +12,7 @@ RUN pip install --user -r req_prod.txt
 # Stage 2: Final
 FROM python:3.9-slim
 
+
 WORKDIR /app
 
 #Copy Only Necessary files from the builder stage

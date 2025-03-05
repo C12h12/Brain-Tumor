@@ -1,0 +1,50 @@
+req_prod.txt
+requirements.txt
+.gitignore
+.venv/
+
+# Ignore Python virtual environments and cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+*.egg
+*.whl
+
+
+# Ignore build artifacts
+dist/
+build/
+*.o
+*.a
+*.out
+*.class
+
+# Ignore Git-related files
+.git/
+.gitignore
+.gitattributes
+.gitmodules
+.hg/
+.hgignore
+.svn/
+
+
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore package managers' lock files
+Pipfile
+Pipfile.lock
+poetry.lock
+requirements.txt
+
+
+# Ignore logs and temporary files
+logs/
+*.log
+*.swp
+*.swo
+tmp/

@@ -13,7 +13,7 @@ from tensorflow.keras.models import Model, load_model
 from glob import glob
 import argparse
 from get_data import get_data, read_params
-import matplotlib.pyplot as plt
+
 from keras.applications.vgg16 import VGG16
 import tensorflow as tf
 import mlflow

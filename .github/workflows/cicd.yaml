@@ -29,9 +29,9 @@ jobs:
       - name: Docker Build and Push to Docker Hub
         run : |
             docker build -t deep@learning:latest .
-            docker tag deep_learning_1 chaita13/dl_images:v1
+            docker tag deep@learning chaita13/dl_images:latest
             docker login -u ${{ secrets.DOCKER_USERNAME }} -p ${{ secrets.DOCKER_PASSWORD }}
-            docker push chaita13/dl_images:v1
+            docker push chaita13/dl_images:latest
         env:
             DOCKER_CLI_ACI: 1
 
